@@ -1,0 +1,64 @@
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 24px;
+  padding: 30px;
+  background: #fff7f0;
+  border-radius: 28px;
+}
+
+.hero-copy {
+  display: grid;
+  gap: 18px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #e26e3c;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.hero-section h1 {
+  margin: 0;
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  line-height: 1.05;
+}
+
+.hero-section p {
+  margin: 0;
+  color: #5c5347;
+}
+
+.cta-button {
+  width: fit-content;
+  padding: 12px 24px;
+  background: #e76c3b;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.hero-box {
+  display: grid;
+  gap: 18px;
+}
+
+.hero-box__item {
+  display: grid;
+  place-items: center;
+  min-height: 96px;
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  font-size: 2rem;
+}
+
+@media (max-width: 840px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,55 @@
+.section-block {
+  margin-top: 36px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 28px;
+}
+
+.section-title p {
+  margin: 0;
+  color: #c28b61;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+}
+
+.section-title h2 {
+  margin: 10px 0 0;
+  font-size: 1.9rem;
+}
+
+.grid-list {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin-top: 24px;
+}
+
+.category-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px;
+  border-radius: 22px;
+  border: 1px solid #f1e4db;
+}
+
+.category-badge {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: #fff2e5;
+  color: #e76c3b;
+  font-weight: 700;
+}
+
+.category-card h3 {
+  margin: 0 0 6px;
+}
+
+.category-card p {
+  margin: 0;
+  color: #6a5c4d;
+}

@@ -1,0 +1,15 @@
+<section class="section-block">
+  <div class="section-title">
+    <p>Explora</p>
+    <h2>Categorías principales</h2>
+  </div>
+  <div class="grid-list">
+    <article class="category-card" *ngFor="let category of categories">
+      <div class="category-badge">{{ category.nombre.charAt(0) | uppercase }}</div>
+      <div>
+        <h3>{{ category.nombre | titlecase }}</h3>
+        <p>Artículos enfocados en {{ category.nombre }}</p>
+      </div>
+    </article>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+<section class="section-block">
+  <div class="section-title">
+    <p>Ofertas Especiales</p>
+    <h2>Productos destacados</h2>
+  </div>
+  <div class="featured-grid">
+    <article class="featured-card" *ngFor="let item of items">
+      <div class="featured-image-container">
+        <div class="featured-placeholder">{{ item.nombre.split('_')[0] | titlecase }}</div>
+      </div>
+      <div class="featured-content">
+        <h3>{{ item.nombre | titlecase }}</h3>
+        <p>Producto de calidad para mascotas</p>
+        <div class="featured-footer">
+          <span class="price">${{ item.precio }}</span>
+          <button class="btn-primary">Comprar ahora</button>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>

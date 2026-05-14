@@ -1,0 +1,21 @@
+<section class="section-block">
+  <div class="section-title">
+    <p>Nuevos Productos</p>
+    <h2>Últimos artículos añadidos</h2>
+  </div>
+  <div class="recent-grid">
+    <article class="recent-card" *ngFor="let item of items">
+      <div class="recent-image-wrapper">
+        <div class="recent-placeholder">{{ item.nombre.split('_')[0] | titlecase }}</div>
+      </div>
+      <div class="recent-info">
+        <h3>{{ item.nombre | titlecase }}</h3>
+        <p>Producto disponible para mascotas</p>
+        <div class="recent-footer">
+          <span class="price">${{ item.precio }}</span>
+          <button class="btn-outline">Ver</button>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
